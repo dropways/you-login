@@ -28,10 +28,10 @@ jQuery(document).ready(function($){
 	  	if( firstLoad ) {
 		    /*
 		    Safari emits a popstate event on page load - check if firstLoad is true before animating
-		    if it's false - the page has just been loaded 
+		    if it's false - the page has just been loaded
 		    */
 	      	var newPageArray = location.pathname.split('/'),
-	        //this is the url of the page to be loaded 
+	        //this is the url of the page to be loaded
 	        newPage = newPageArray[newPageArray.length - 1].replace('.html', '');
 	      	if( !isAnimating ) triggerAnimation(newPage, false);
 	    }
@@ -49,7 +49,7 @@ jQuery(document).ready(function($){
 	function triggerAnimation(newSection, bool) {
 		isAnimating =  true;
 		newSection = ( newSection == '' ) ? 'index' : newSection;
-		
+
 		//update dashboard
 		dashboard.find('*[data-menu="'+newSection+'"]').addClass('selected').parent('li').siblings('li').children('.selected').removeClass('selected');
 		//trigger loading bar animation
@@ -63,13 +63,13 @@ jQuery(document).ready(function($){
 			barHeight = selectedItem.outerHeight(),
 			barTop = selectedItem.offset().top,
 			windowHeight = $(window).height(),
-			maxOffset = ( barTop + barHeight/2 > windowHeight/2 ) ? barTop : windowHeight- barTop - barHeight,
+			maxOffset = ( barTop + barHeight/2 > windowHeight/2 ) ? barTop : windowHeight- barHeight,
 			scaleValue = ((2*maxOffset+barHeight)/barHeight).toFixed(3)/1 + 0.001;
-		
+
 		//place the loading bar next to the selected dashboard element
 		loadingBar.data('scale', scaleValue).css({
 		    height: barHeight,
-		    top: barTop
+		    //top: barTop
 		}).attr('class', '').addClass('loading '+section);
 	}
 
@@ -77,14 +77,14 @@ jQuery(document).ready(function($){
 		setTimeout(function(){
 			//animate loading bar
 			loadingBarAnimation();
-			
+
 			//create a new section element and insert it into the DOM
 			var section = $('<section class="cd-section overflow-hidden '+newSection+'"></section>').appendTo(mainContent);
 			//load the new content from the proper html file
 			section.load(newSection+'.html .cd-section > *', function(event){
 				//finish up the animation and then make the new section visible
 				var scaleMax = loadingBar.data('scale');
-				
+
 				loadingBar.velocity('stop').velocity({
 					scaleY: scaleMax
 				}, 400, function(){
@@ -118,7 +118,7 @@ jQuery(document).ready(function($){
 		} else if ( newScaleValue + 0.5 < scaleMax ) {
 			newScaleValue = newScaleValue + 0.5;
 		}
-		
+
 		loadingBar.velocity({
 			scaleY: newScaleValue
 		}, 100, loadingBarAnimation);
