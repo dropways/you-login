@@ -20,4 +20,19 @@ jQuery(document).ready(function(){
 	jQuery('.dropdown').on('hide.bs.dropdown', function(e){
 		jQuery(this).find('.dropdown-menu').first().stop(true, true).slideUp(200);
 	});
+
+	// login form slider js
+	jQuery('.login-form-slider .sign-up-click').on('click', function() {
+		jQuery('.signup-slide').velocity({translateX: ['0%','-100%'] }, {display:"block"});
+		jQuery('.login-slide').velocity({translateX: '100%' }, {display:"none"});
+	});
+	jQuery('.login-form-slider .login-click').on('click', function() {
+		jQuery('.login-slide').velocity({translateX: ['0%','-100%'] }, {display:"block"});
+		jQuery('.forgot-password-slide').velocity({translateX: '100%' }, {display:"none"});
+		jQuery('.signup-slide').velocity({translateX: '100%' }, {display:"none"});
+	});
+	jQuery('.login-form-slider .forgot-password-click').on('click', function() {
+		jQuery('.forgot-password-slide').velocity({translateX: ['0%','-100%'] }, {display:"block"});
+		jQuery('.login-slide').velocity({translateX: '100%' }, {display:"none"});
+	});
 });

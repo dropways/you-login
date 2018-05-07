@@ -10,7 +10,7 @@ jQuery(document).ready(function($){
 		loadingBar = $('#cd-loading-bar');
 
 	//select a new section
-	dashboard.on('click', 'a', function(event){
+	$('.cd-side-navigation a').on('click', function(event){
 		event.preventDefault();
 		var target = $(this),
 			//detect which section user has chosen
