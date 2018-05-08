@@ -114,6 +114,10 @@ p {
 	width: 100%;
 }
 
+.height-100-percentage{height: 100%;}
+.width-100-percentage{width: 100%;}
+.padding-top-15px{padding-top: 15px;}
+
 /*==============================================================
 	02. Header Style
 ==============================================================*/
@@ -357,6 +361,38 @@ p {
 	background-image: linear-gradient(to right top, #38438b, #944b94, #d75a88, #ff7e71, #ffb25f, #ffeb68);
 }
 
+.login-with{
+	color: #ffffff;
+	text-align: center;
+}
+.login-with h3{
+	font-size: 24px;
+	font-weight: 400;
+	font-family: 'gidoleregular';
+	margin-bottom: 15px;
+}
+.social-login-btn{}
+.social-login-btn li{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 5px;
+}
+.social-login-btn li a{
+	display: block;
+	background: #ffffff;
+	color: #222222;
+	padding: 5px 30px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+.social-login-btn li.facebook-btn a i{color: #405499;}
+.social-login-btn li.twitter-btn a i{color: #55acee;}
+.social-login-btn li.google-btn a img{
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -4px;
+}
 
 .login-form-slider{
 	position: relative;
@@ -373,8 +409,8 @@ p {
 	display: none;
 }
 .login-form-slider .slide.login-slide{display: block;}
-.login-form-slider .slide.signup-slide{background: green; color: #ffffff;}
-.login-form-slider .slide.forgot-password-slide{background: blue; color: #ffffff;}
+.login-form-slider .slide.signup-slide{}
+.login-form-slider .slide.forgot-password-slide{}
 
 /* style 1 css */
 
@@ -395,7 +431,7 @@ p {
 	border-radius: 5px;
 	position: relative;
 }
-.style1 .login-box h1 {
+.style1 .login-box h1.title{
 	position: absolute;
 	left: 45px;
 	top: 27%;
@@ -403,7 +439,7 @@ p {
 	font-size: 65px;
 	font-family: 'gidoleregular';
 }
-.style1 .login-box h3 {
+.style1 .login-box h3.subtitle{
 	position: absolute;
 	left: 50px;
 	top: 37%;
@@ -416,11 +452,12 @@ p {
 	background-size: cover;
 	background-position: center bottom;
 	width: 400px;
-	height: 500px;
+	height: 600px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	position: absolute;
+	overflow: hidden;
 	right: -55px;
 	-webkit-box-shadow: 20px 22px 58px 3px rgba(0, 0, 0, .50);
 	-moz-box-shadow: 20px 22px 58px 3px rgba(0, 0, 0, .50);
@@ -428,7 +465,7 @@ p {
 }
 .login-style1{
 	background: url(../images/style2img.jpg) no-repeat;
-	padding: 50px;
+	padding: 50px 50px 10px;
 	color: #ffffff;
 }
 .login-style1 .label{
@@ -484,6 +521,46 @@ p {
 .login-style1 a{
 	color: #ffffff;
 }
+.login-style1 .sign-up-txt{
+	font-size: 18px;
+	color: #ffffff;
+	font-weight: 400;
+	letter-spacing: 0.050em;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+.login-style1 .sign-up-txt a{
+	color: #01e3f7;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.login-style1 .sign-up-txt a:hover{
+	color: #ffffff;
+}
+.login-style1 .forgot-txt{
+	padding-bottom: 30px;
+}
+.login-style1 .forgot-txt a{
+	color: rgba(255,255,255,0.8);
+	display: inline-block;
+	font-size: 18px;
+	line-height: 18px;
+	letter-spacing: 0.050em;
+	border-bottom: 1px dashed rgba(255,255,255,0.8);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.login-style1 .forgot-txt a:hover{
+	color: #ffffff;
+}
+
+
+
+
 /* style 2 css */
 .index2 .style2{
 	background: url(../images/banner2.jpg) no-repeat;
