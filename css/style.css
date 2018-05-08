@@ -563,21 +563,55 @@ p {
 
 /* style 2 css */
 .index2 .style2{
-	background: url(../images/banner2.jpg) no-repeat;
+	background: url(../images/banner4.jpg) no-repeat;
 	background-size: cover;
 	background-position: center center;
 }
 .style2{}
 .style2 .login-box{
-	max-width: 1000px;
+	max-width: 400px;
 	margin: 0 auto;
 	width: 100%;
 	background: #ffffff;
-	height: 700px;
+	height: 500px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	overflow: hidden;
+	position: relative;
+	-webkit-box-shadow: 0px 13px 84px 7px rgba(0, 0, 0, .30);
+	-moz-box-shadow: 0px 13px 84px 7px rgba(0, 0, 0, .30);
+	box-shadow: 0px 13px 84px 7px rgba(0, 0, 0, .30);
+}
+.style2 .login-box:before{
+	content: "";
+	width: 90%;
+	height: 10px;
+	background: rgba(255,255,255,0.5);
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	bottom: -10px;
+	-webkit-border-radius: 0px 0px 3px 3px;
+	-moz-border-radius: 0px 0px 3px 3px;
+	border-radius: 0px 0px 3px 3px;
+	-webkit-box-shadow: 0px 13px 84px 7px rgba(0, 0, 0, .30);
+	-moz-box-shadow: 0px 13px 84px 7px rgba(0, 0, 0, .30);
+	box-shadow: 0px 13px 84px 7px rgba(0, 0, 0, .30);
+}
+.style2 .login-box:after{
+	content: "";
+	width: 80%;
+	height: 10px;
+	background: rgba(255,255,255,0.4);
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	bottom: -20px;
+	-webkit-border-radius: 0px 0px 3px 3px;
+	-moz-border-radius: 0px 0px 3px 3px;
+	border-radius: 0px 0px 3px 3px;
 }
 .image1{
 	background: url(../images/image1.jpg) no-repeat;
