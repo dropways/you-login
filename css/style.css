@@ -11,7 +11,7 @@
 
 		01. Common Styles Initials
 		02. Custom Style
-		03. Button Style
+		03. Login with social
 
 ==============================================================*/
 
@@ -117,6 +117,8 @@ p {
 .height-100-percentage{height: 100%;}
 .width-100-percentage{width: 100%;}
 .padding-top-15px{padding-top: 15px;}
+.padding-40px{padding: 40px;}
+.margin-bottom-30px{margin-bottom: 30px;}
 
 /*==============================================================
 	02. Header Style
@@ -288,12 +290,6 @@ p {
 }
 /* menu animation end */
 
-.style1 .section-wrap{
-	background-size: cover !important;
-	width: 100%;
-	height: 100%;
-}
-
 .cd-main {
 	height: 100vh;
 	overflow: hidden;
@@ -360,7 +356,9 @@ p {
 	background-image: -o-linear-gradient(left bottom, #38438b, #944b94, #d75a88, #ff7e71, #ffb25f, #ffeb68);
 	background-image: linear-gradient(to right top, #38438b, #944b94, #d75a88, #ff7e71, #ffb25f, #ffeb68);
 }
-
+/*==============================================================
+	02. Login with social
+==============================================================*/
 .login-with{
 	color: #ffffff;
 	text-align: center;
@@ -412,7 +410,9 @@ p {
 .login-form-slider .slide.signup-slide{}
 .login-form-slider .slide.forgot-password-slide{}
 
-/* style 1 css */
+/*==============================================================
+	02. Login Style 1
+==============================================================*/
 
 .index .style1{
 	background: url(../images/banner3.jpg) no-repeat;
@@ -558,10 +558,29 @@ p {
 	color: #ffffff;
 }
 
+.login-style1 .social-login-btn li a{
+	width: 45px;
+	height: 45px;
+	padding: 0;
+	text-align: center;
+	line-height: 41px;
+	font-size: 20px;
+}
+.login-style1 .social-login-btn li.facebook-btn a{
+	background: #6582e4;
+}
+.login-style1 .social-login-btn li.twitter-btn a{
+	background: #55acee;
+}
+.login-style1 .social-login-btn li a i{
+	line-height: 50px;
+	color: #ffffff;
+}
 
 
-
-/* style 2 css */
+/*==============================================================
+	02. Login Style 2
+==============================================================*/
 .index2 .style2{
 	background: url(../images/banner4.jpg) no-repeat;
 	background-size: cover;
@@ -613,8 +632,123 @@ p {
 	-moz-border-radius: 0px 0px 3px 3px;
 	border-radius: 0px 0px 3px 3px;
 }
-.image1{
-	background: url(../images/image1.jpg) no-repeat;
-	background-size: cover;
-	background-position: center bottom;
+.style2 .login-form-slider .slide{
+	padding: 40px;
+}
+.style2 h3{
+	font-size: 25px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #9b5c60;
+	letter-spacing: 0.020em;
+	margin-bottom: 30px;
+	font-family: 'Nunito', sans-serif;
+}
+.style2 .form-group{
+	position: relative;
+}
+.style2 .form-control{
+	height: 50px;
+	padding-left: 40px;
+	border: 0;
+	color: #633e62;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Nunito', sans-serif;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.style2 .forgot-password-field .form-control{
+	padding-right: 70px;
+}
+.style2 .forgot-password-field .forgot-password-click{
+	position: absolute;
+	right: 10px;
+	top: 15px;
+	color: #d3674a;
+	font-family: 'Nunito', sans-serif;
+	font-size: 15px;
+	letter-spacing: 0.030em;
+	font-weight: 600;
+}
+.style2 .form-control::-webkit-input-placeholder {
+	opacity: 1;
+	color: #c2c1bf;
+}
+.style2 .form-control::-moz-placeholder {
+	opacity: 1;
+	color: #c2c1bf;
+}
+.style2 .form-control:-ms-input-placeholder {
+	opacity: 1;
+	color: #c2c1bf;
+}
+.style2 .form-control:focus{
+	-webkit-box-shadow: 0px 0px 0px 2px rgba(92, 58, 93, .3);
+	-moz-box-shadow: 0px 0px 0px 2px rgba(92, 58, 93, .3);
+	box-shadow: 0px 0px 0px 2px rgba(92, 58, 93, .3);
+}
+.style2 .field-icon{
+	position: absolute;
+	font-size: 20px;
+	left: 10px;
+	top: 10px;
+	color: #633e62;
+	text-shadow: 3px 3px 0px rgba(0, 0, 0, .2);
+}
+.style2 .sign-in-btn:before{
+	content: "";
+	position: absolute;
+	left: -40px;
+	top: 50%;
+	border-top: 2px dashed #d2c4cb;
+	width: 125%;
+	text-align: center;
+}
+.style2 .sign-in-btn .submit{
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	width: 160px;
+	height: 50px;
+	color: #ffffff;
+	background: -moz-linear-gradient(11deg, rgba(140,81,123,1) 0%, rgba(54,40,69,1) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(140,81,123,1)), color-stop(100%, rgba(54,40,69,1))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(11deg, rgba(140,81,123,1) 0%, rgba(54,40,69,1) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(11deg, rgba(140,81,123,1) 0%, rgba(54,40,69,1) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(11deg, rgba(140,81,123,1) 0%, rgba(54,40,69,1) 100%); /* ie10+ */
+	background: linear-gradient(79deg, rgba(140,81,123,1) 0%, rgba(54,40,69,1) 100%); /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c517b', endColorstr='#362845',GradientType=1 ); /* ie6-9 */
+	border: 0;
+	letter-spacing: 0.040em;
+	font-size: 16px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	cursor: pointer;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: 'Nunito', sans-serif;
+	-webkit-box-shadow: 3px 8px 21px rgba(92, 58, 93, .35);
+	-moz-box-shadow: 3px 8px 21px rgba(92, 58, 93, .35);
+	box-shadow: 3px 8px 21px rgba(92, 58, 93, .35);
+}
+.style2 .sign-up-txt{
+	padding-top: 40px;
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	color: #868582;
+	font-size: 17px;
+}
+.style2 .sign-up-txt a{
+	color: #6d3346;
+	font-size: 18px;
+	display: inline-block;
+	padding-left: 6px;
+	font-weight: 600;
+}
+.style2 .signup-slide .sign-up-txt{
+	padding-top: 10px;
 }
