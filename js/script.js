@@ -36,3 +36,24 @@ jQuery(document).ready(function(){
 		jQuery('.login-slide').velocity({translateX: '100%' }, {display:"none"});
 	});
 });
+
+jQuery(document).ready(function(){
+	$('.floating-form .form-group .form-control').each(function(index, el) {
+		var text_val = $(this).val();
+		if(text_val === "") {
+			$(this).parent().removeClass('has-value');
+		}else {
+			$(this).parent().addClass('has-value');
+		}
+		$(this).focus(function(){
+			$(this).parent().addClass("is-focus");
+			$(this).parent().addClass('has-value');
+		})
+		.blur(function(){
+			if($(this).val() === "" || $(this).val() === " " || $(this).val() === null){
+				$(this).parent().removeClass("is-focus");
+				$(this).parent().removeClass('has-value');
+			}
+		})
+	});
+});

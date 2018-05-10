@@ -158,12 +158,12 @@ p {
 	display: inline-block;
 }
 .header-wrap .logo a img{
-	width: 150px;
-	height: 80px;
+	width: 130px;
+	height: 65px;
 }
 .header-wrap .menu{
 	float: right;
-	padding-top: 18px;
+	padding-top: 7px;
 }
 .header-wrap .menu .dropdown-toggle{
 	display: inline-block;
@@ -350,12 +350,6 @@ p {
 	visibility: visible !important;
 }
 
-.index3 .style3{
-	background-image: -webkit-gradient(linear, left bottom, right top, from(#38438b), color-stop(#944b94), color-stop(#d75a88), color-stop(#ff7e71), color-stop(#ffb25f), to(#ffeb68));
-	background-image: -webkit-linear-gradient(left bottom, #38438b, #944b94, #d75a88, #ff7e71, #ffb25f, #ffeb68);
-	background-image: -o-linear-gradient(left bottom, #38438b, #944b94, #d75a88, #ff7e71, #ffb25f, #ffeb68);
-	background-image: linear-gradient(to right top, #38438b, #944b94, #d75a88, #ff7e71, #ffb25f, #ffeb68);
-}
 /*==============================================================
 	02. Login with social
 ==============================================================*/
@@ -751,4 +745,122 @@ p {
 }
 .style2 .signup-slide .sign-up-txt{
 	padding-top: 10px;
+}
+/*==============================================================
+	02. Login Style 3
+==============================================================*/
+.index3 .style3{
+	background: url(../images/banner2.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.style3 .login-box{
+	max-width: 370px;
+	margin: 0 auto;
+	width: 100%;
+	color: rgba(255,255,255,0.7);
+	background: #09406a;
+	background-position: center top;
+	height: 600px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	position: relative;
+	-webkit-box-shadow: 0px 13px 84px 7px rgba(255, 255, 255, .30);
+	-moz-box-shadow: 0px 13px 84px 7px rgba(255, 255, 255, .30);
+	box-shadow: 0px 13px 84px 7px rgba(255, 255, 255, .30);
+}
+.style3 .login-form-slider .slide{
+	padding: 270px 30px 20px;
+	background: url(../images/style3img.jpg) no-repeat #09406a;
+	background-position: center top;
+}
+.style3 .form-group{
+	position: relative;
+}
+.style3 .form-group .form-control {
+	box-shadow: none;
+	border-radius: 0;
+	border: 0;
+	height: 52px;
+	font-size: 18px;
+	color: rgba(255,255,255,0.8);
+	font-family: 'Nunito', sans-serif;
+	font-weight: 200;
+	z-index: 123;
+	position: relative;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#0e2f62), to(#0e2f62)), -webkit-gradient(linear, left top, left bottom, from(#b3b3b3), to(#b3b3b3));
+	background-image: -webkit-linear-gradient(#0e2f62, #0e2f62), -webkit-linear-gradient(#b3b3b3, #b3b3b3);
+	background-image: -o-linear-gradient(#0e2f62, #0e2f62), -o-linear-gradient(#b3b3b3, #b3b3b3);
+	background-image: linear-gradient(#0e2f62, #0e2f62), linear-gradient(#b3b3b3, #b3b3b3);
+	-webkit-background-size: 0 2px, 100% 1px;
+	background-size: 0 2px, 100% 1px;
+	background-repeat: no-repeat;
+	background-position: center bottom, center -webkit-calc(100% - 1px);
+	background-position: center bottom, center calc(100% - 1px);
+	background-color: rgba(0, 0, 0, 0);
+	-webkit-transition: background 0s ease-out;
+	-o-transition: background 0s ease-out;
+	transition: background 0s ease-out;
+}
+.style3 .form-group.is-focus .form-control{
+	outline: none;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#81cdf5), to(#81cdf5)), -webkit-gradient(linear, left top, left bottom, from(#81cdf5), to(#81cdf5));
+	background-image: -webkit-linear-gradient(#81cdf5, #81cdf5), -webkit-linear-gradient(#81cdf5, #81cdf5);
+	background-image: -o-linear-gradient(#81cdf5, #81cdf5), -o-linear-gradient(#81cdf5, #81cdf5);
+	background-image: linear-gradient(#81cdf5, #81cdf5), linear-gradient(#81cdf5, #81cdf5);
+	-webkit-background-size: 100% 2px, 100% 1px;
+	background-size: 100% 2px, 100% 1px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+.style3 .form-group.is-focus .label {
+	top: 0;
+	z-index: 12;
+	font-size: 12px;
+	font-weight: 400;
+}
+.style3 .form-group.has-value .label {
+	top: 0;
+	z-index: 12;
+	font-size: 12px;
+	font-weight: 400;
+}
+.style3 .form-group .label {
+	position: absolute;
+	top: 27px;
+	left: 15px;
+	padding: 0 2px;
+	font-size: 18px;
+	font-family: 'Nunito', sans-serif;
+	color: rgba(255,255,255,0.7);
+	font-weight: 200;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.style3 .submit{
+	height: 45px;
+	width: 100%;
+	color: #ffffff;
+	border: 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #e6305d;
+	text-transform: uppercase;
+	font-family: 'Nunito', sans-serif;
+	font-size: 16px;
+	display: block;
+	cursor: pointer;
 }
