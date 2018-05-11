@@ -770,6 +770,9 @@ p {
 	-moz-box-shadow: 0px 13px 84px 7px rgba(255, 255, 255, .30);
 	box-shadow: 0px 13px 84px 7px rgba(255, 255, 255, .30);
 }
+.style3 .login-box a{
+	color: rgba(255,255,255,1);
+}
 .style3 .login-form-slider .slide{
 	padding: 270px 30px 20px;
 	background: url(../images/style3img.jpg) no-repeat #09406a;
@@ -863,4 +866,21 @@ p {
 	font-size: 16px;
 	display: block;
 	cursor: pointer;
+}
+.style3 .sign-up-txt{
+	text-align: center;
+}
+.style3 .forgot-txt{
+	text-align: center;
+	text-decoration: underline;
+	padding-top: 10px;
+}
+
+/*==============================================================
+	02. Login Style 4
+==============================================================*/
+.index4 .style4{
+	background: url(../images/banner1.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
 }

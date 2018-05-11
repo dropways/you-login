@@ -39,11 +39,11 @@
 						</span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right">
-						<ul class="cd-side-navigation">
-							<li><a class="dropdown-item" data-menu="index" href="#">Login Style 1</a></li>
-							<li><a class="dropdown-item" data-menu="index2" href="#">Login Style 2</a></li>
-							<li><a class="dropdown-item selected" data-menu="index3" href="#">Login Style 3</a></li>
-							<li><a class="dropdown-item" href="#">Login Style 4</a></li>
+						<ul>
+							<li><a class="dropdown-item" href="index.html">Login Style 1</a></li>
+							<li><a class="dropdown-item" href="index2.html">Login Style 2</a></li>
+							<li><a class="dropdown-item selected" href="index3.html">Login Style 3</a></li>
+							<li><a class="dropdown-item" href="index4.html">Login Style 4</a></li>
 							<li><a class="dropdown-item" href="#">Login Style 5</a></li>
 							<li><a class="dropdown-item" href="#">Login Style 6</a></li>
 							<li><a class="dropdown-item" href="#">Login Style 7</a></li>
@@ -64,7 +64,7 @@
 						<div class="login-slide slide">
 							<div class="d-flex height-100-percentage">
 								<div class="align-self-center width-100-percentage">
-									<form class="floating-form">
+									<form class="floating-form" autocomplete="off">
 										<div class="form-group">
 											<input type="text" class="form-control">
 											<label class="label">User name</label>
@@ -89,25 +89,30 @@
 						<div class="signup-slide slide">
 							<div class="d-flex height-100-percentage">
 								<div class="align-self-center width-100-percentage">
-									<h3>Sign Up</h3>
-									<form>
-										<div class="form-group user-name-field">
-											<input type="text" class="form-control" placeholder="Name">
-											<div class="field-icon"><i class="ion-person"></i></div>
-										</div>
-										<div class="form-group user-name-field">
-											<input type="text" class="form-control" placeholder="Email">
-											<div class="field-icon"><i class="ion-ios-email"></i></div>
+									<form class="floating-form">
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="form-group">
+													<label class="label">Name</label>
+													<input type="text" class="form-control">
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="form-group">
+													<label class="label">Email</label>
+													<input type="text" class="form-control">
+												</div>
+											</div>
 										</div>
 										<div class="form-group">
-											<input type="password" class="form-control" placeholder="Password">
-											<div class="field-icon"><i class="ion-locked"></i></div>
+											<label class="label">Password</label>
+											<input type="password" class="form-control">
 										</div>
-										<div class="form-group margin-bottom-30px">
-											<input type="password" class="form-control" placeholder="Confirm Password">
-											<div class="field-icon"><i class="ion-locked"></i></div>
+										<div class="form-group">
+											<label class="label">Confirm Password</label>
+											<input type="password" class="form-control">
 										</div>
-										<div class="form-group sign-in-btn">
+										<div class="form-group">
 											<input type="submit" class="submit" value="Sign Up">
 										</div>
 									</form>
@@ -120,14 +125,13 @@
 						<div class="forgot-password-slide slide">
 							<div class="d-flex height-100-percentage">
 								<div class="align-self-center width-100-percentage">
-									<h3>Forgot Password</h3>
-									<form>
+									<form class="floating-form">
 										<label class="label">Enter your email address to reset your password</label>
 										<div class="form-group user-name-field">
-											<input type="text" class="form-control" placeholder="Email">
-											<div class="field-icon"><i class="ion-ios-email"></i></div>
+											<label class="label">Email</label>
+											<input type="text" class="form-control">
 										</div>
-										<div class="form-group sign-in-btn">
+										<div class="form-group">
 											<input type="submit" class="submit" value="Submit">
 										</div>
 									</form>
@@ -150,7 +154,7 @@
 	<script type="text/javascript" src="js/popper.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script src="js/velocity.min.js"></script>
-	<script src="js/main.js"></script>
+	<!-- <script src="js/main.js"></script> -->
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

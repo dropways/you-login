@@ -8,7 +8,27 @@ jQuery(document).ready(function($){
 	var dashboard = $('.cd-side-navigation'),
 		mainContent = $('.cd-main'),
 		loadingBar = $('#cd-loading-bar');
-
+	var refresh = function() {
+		$('.floating-form .form-group .form-control').each(function(index, el) {
+			var text_val = $(this).val();
+			if(text_val === "") {
+				$(this).parent().removeClass('has-value');
+			}else {
+				$(this).parent().addClass('has-value');
+			}
+			$(this).focus(function(){
+				$(this).parent().addClass("is-focus");
+				$(this).parent().addClass('has-value');
+			})
+			.blur(function(){
+				if($(this).val() === "" || $(this).val() === " " || $(this).val() === null){
+					$(this).parent().removeClass("is-focus");
+					$(this).parent().removeClass('has-value');
+				}
+			})
+		});
+	};
+	refresh();
 	//select a new section
 	$('.cd-side-navigation a').on('click', function(event){
 		event.preventDefault();
@@ -129,6 +149,7 @@ jQuery(document).ready(function($){
 		isAnimating =  false;
 		//reset your loading bar
 		resetLoadingBar();
+		refresh();
 	}
 
 	function resetLoadingBar() {
