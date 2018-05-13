@@ -884,3 +884,126 @@ p {
 	background-size: cover;
 	background-position: center center;
 }
+.style4 .login-box{
+	max-width: 800px;
+	margin: 0 auto;
+	width: 100%;
+	background-position: center top;
+	height: 400px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	position: relative;
+	-webkit-box-shadow: 0px 13px 84px 7px rgba(0, 0, 0, .30);
+	-moz-box-shadow: 0px 13px 84px 7px rgba(0, 0, 0, .30);
+	box-shadow: 0px 13px 84px 7px rgba(0, 0, 0, .30);
+}
+.style4 .forgot-txt{
+	padding-bottom: 20px;
+}
+.style4 .forgot-txt a{
+	color: #593f40;
+	font-size: 15px;
+	line-height: 15px;
+	font-weight: 400;
+	display: inline-block;
+	font-family: 'Poppins', sans-serif;
+	border-bottom: 1px dashed #000;
+}
+.style4 .sign-up-txt{
+	color: #000000;
+	font-size: 15px;
+	line-height: 15px;
+	font-weight: 400;
+	font-family: 'Poppins', sans-serif;
+}
+.style4 .sign-up-txt a{
+	color: #593f40;
+	font-size: 15px;
+	line-height: 15px;
+	font-weight: 400;
+	display: inline-block;
+	font-family: 'Poppins', sans-serif;
+	border-bottom: 1px dashed #000;
+}
+.style4 .style4-left{
+	background: #ffffff;
+}
+.style4 .style4-right{
+	background: rgba(60,59,55,0.8);
+	color: #ffffff;
+	font-family: 'Nunito', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+}
+.style4 .style4-right h4{
+	font-family: 'Nunito', sans-serif;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+.style4 .style4-right a{
+	display: inline-block;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+	padding: 15px 20px;
+}
+.style4 .style4-right a i{
+	display: inline-block;
+	margin-left: 10px;
+}
+.style4 .label{
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	color: #686868;
+	font-family: 'Nunito', sans-serif;
+}
+.style4 .form-control{
+	height: 50px;
+	border: 1px solid #e1e1e1;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	color: #000000;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: 'Nunito', sans-serif;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.style4 .form-control:focus{
+	-webkit-box-shadow: 0px 0px 0px 2px rgba(151, 115, 101, .9);
+	-moz-box-shadow: 0px 0px 0px 2px rgba(151, 115, 101, .9);
+	box-shadow: 0px 0px 0px 2px rgba(151, 115, 101, .9);
+}
+.style4 h2{
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+.style4 .submit{
+	display: inline-block;
+	height: 50px;
+	padding-left: 20px;
+	padding-right: 40px;
+	min-width: 140px;
+	text-align: left;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Nunito', sans-serif;
+	letter-spacing: 0.050em;
+	border: 0;
+	cursor: pointer;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	background: url(../images/arrow-right-c.svg) no-repeat #593f40;
+	background-size: 23px 23px;
+	background-position: center right 10px;
+}
