@@ -5,20 +5,21 @@
 	<!-- Site favicon -->
 	<!-- <link rel="shortcut icon" href="images/creative-fav.ico"> -->
 	<!-- Mobile Specific Metas -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!-- Google Font -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700" rel="stylesheet">
-	<!-- Icon Font -->
-	<link rel="stylesheet" href="fonts/ionicons/css/ionicons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <!-- Icon Font -->
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.css">
 	<!-- Text Font -->
-	<link rel="stylesheet" href="fonts/font.css">
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Normal style CSS -->
-	<link rel="stylesheet" href="css/style.css">
-	<!-- Normal media CSS -->
-	<link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="fonts/font.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Normal style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Normal media CSS -->
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 
@@ -42,10 +43,10 @@
 						<ul>
 							<li><a class="dropdown-item" href="index.html">Login Style 1</a></li>
 							<li><a class="dropdown-item" href="index2.html">Login Style 2</a></li>
-							<li><a class="dropdown-item selected" href="index3.html">Login Style 3</a></li>
+							<li><a class="dropdown-item" href="index3.html">Login Style 3</a></li>
 							<li><a class="dropdown-item" href="index4.html">Login Style 4</a></li>
 							<li><a class="dropdown-item" href="index5.html">Login Style 5</a></li>
-							<li><a class="dropdown-item" href="#">Login Style 6</a></li>
+							<li><a class="dropdown-item selected" href="index6.html">Login Style 6</a></li>
 							<li><a class="dropdown-item" href="#">Login Style 7</a></li>
 							<li><a class="dropdown-item" href="#">Login Style 8</a></li>
 							<li><a class="dropdown-item" href="#">Login Style 9</a></li>
@@ -57,81 +58,105 @@
 	</div>
 	<!-- Header start -->
 	<main class="cd-main">
-		<section class="cd-section index3 visible">
-			<div class="cd-content style3">
+		<section class="cd-section index6 visible">
+			<div class="cd-content style6">
 				<div class="login-box">
 					<div class="login-form-slider">
 						<div class="login-slide slide">
-							<div class="d-flex height-100-percentage">
+							<div class="sign-up-txt">
+								Don't have an account? <a href="javascript:;" class="sign-up-click">Register Now</a>
+							</div>
+							<div class="d-flex height-100-percentage max-width-400 margin-0-auto padding-10px">
 								<div class="align-self-center width-100-percentage">
-									<form class="floating-form" autocomplete="off">
+									<h2>Sign in</h2>
+									<form>
 										<div class="form-group">
+											<label class="label">Enter Your Email</label>
 											<input type="text" class="form-control">
-											<label class="label">User name</label>
 										</div>
 										<div class="form-group">
-											<input type="password" class="form-control">
 											<label class="label">Password</label>
+											<input type="password" class="form-control">
 										</div>
-										<div class="form-group">
-											<input type="submit" class="submit" value="Sign In">
+										<div class="row">
+											<div class="col-6">
+												<div class="forgot-txt">
+													<a href="javascript:;" class="forgot-password-click">Forgot Password</a>
+												</div>
+											</div>
+											<div class="col-6">
+												<div class="form-group text-right">
+													<input type="submit" class="submit" value="Login">
+												</div>
+											</div>
 										</div>
 									</form>
-									<div class="sign-up-txt">
-										Don't have an account? <a href="javascript:;" class="sign-up-click">Signup</a>
-									</div>
-									<div class="forgot-txt">
-										<a href="javascript:;" class="forgot-password-click">Forgot Password</a>
-									</div>
 								</div>
 							</div>
 						</div>
 						<div class="signup-slide slide">
-							<div class="d-flex height-100-percentage">
+							<div class="sign-up-txt">
+								if you have an account? <a href="javascript:;" class="login-click">login</a>
+							</div>
+							<div class="d-flex height-100-percentage padding-40px">
 								<div class="align-self-center width-100-percentage">
+									<h2>Create An Account</h2>
 									<form class="floating-form">
 										<div class="row">
-											<div class="col-sm-6">
+											<div class="col-md-6 col-sm-12">
 												<div class="form-group">
-													<label class="label">Name</label>
+													<label class="label">First Name</label>
 													<input type="text" class="form-control">
 												</div>
 											</div>
-											<div class="col-sm-6">
+											<div class="col-md-6 col-sm-12">
+												<div class="form-group">
+													<label class="label">Last Name</label>
+													<input type="text" class="form-control">
+												</div>
+											</div>
+											<div class="col-md-6 col-sm-12">
 												<div class="form-group">
 													<label class="label">Email</label>
 													<input type="text" class="form-control">
 												</div>
 											</div>
+											<div class="col-md-6 col-sm-12">
+												<div class="form-group">
+													<label class="label">Phone</label>
+													<input type="text" class="form-control">
+												</div>
+											</div>
+											<div class="col-md-6 col-sm-12">
+												<div class="form-group">
+													<label class="label">Password</label>
+													<input type="password" class="form-control">
+												</div>
+											</div>
+											<div class="col-md-6 col-sm-12">
+												<div class="form-group">
+													<label class="label">Confirm Password</label>
+													<input type="password" class="form-control">
+												</div>
+											</div>
 										</div>
-										<div class="form-group">
-											<label class="label">Password</label>
-											<input type="password" class="form-control">
-										</div>
-										<div class="form-group">
-											<label class="label">Confirm Password</label>
-											<input type="password" class="form-control">
-										</div>
-										<div class="form-group">
-											<input type="submit" class="submit" value="Sign Up">
+										<div class="form-group text-right">
+											<input type="submit" class="submit" value="Register">
 										</div>
 									</form>
-									<div class="sign-up-txt">
-										if you have an account? <a href="javascript:;" class="login-click">login</a>
-									</div>
 								</div>
 							</div>
 						</div>
 						<div class="forgot-password-slide slide">
-							<div class="d-flex height-100-percentage">
-								<div class="align-self-center width-100-percentage">
+							<div class="d-flex height-100-percentage style4-left">
+								<div class="align-self-center width-100-percentage max-width-400 margin-0-auto padding-10px">
 									<form class="floating-form">
 										<label class="label">Enter your email address to reset your password</label>
 										<div class="form-group user-name-field">
-											<label class="label">Email</label>
 											<input type="text" class="form-control">
+											<label class="label">Email</label>
 										</div>
-										<div class="form-group">
+										<div class="form-group text-right">
 											<input type="submit" class="submit" value="Submit">
 										</div>
 									</form>
