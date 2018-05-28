@@ -10,8 +10,15 @@
 	Table of contents
 
 		01. Common Styles Initials
-		02. Custom Style
+		02. Header Style
 		03. Login with social
+		04. Login Style 1
+		05. Login Style 2
+		06. Login Style 3
+		07. Login Style 4
+		08. Login Style 5
+		09. Login Style 6
+		10. Login Style 7
 
 ==============================================================*/
 
@@ -38,7 +45,6 @@ body {
 	margin: 0;
 	padding: 0;
 	-webkit-font-smoothing: antialiased;
-	/*font-family: Arial Rounded MT Bold, Helvetica Rounded, Arial, sans-serif;*/
 	font-family: 'gidoleregular';
 	font-weight: 400;
 	width: 100%;
@@ -158,7 +164,7 @@ p {
 	display: inline-block;
 }
 .header-wrap .logo a img{
-	width: 130px;
+	width: 180px;
 	height: 65px;
 }
 .header-wrap .menu{
@@ -171,7 +177,8 @@ p {
 	width: 50px;
 	height: 50px;
 	color: #ffffff;
-	background: #0099ff;
+	/*background: #0099ff;*/
+	background: #284F81;
 	text-align: center;
 	position: relative;
 	-webkit-border-radius: 100%;
@@ -279,11 +286,11 @@ p {
 	transition: all 0.3s ease-in-out;
 }
 .header-wrap .menu .dropdown-menu .dropdown-item:hover{
-	color: #000000;
+	color: #284F81;
 }
 .header-wrap .menu .dropdown-menu .dropdown-item.selected{
 	color: #ffffff;
-	background: #007bff;
+	background: #284F81;
 }
 .header-wrap .menu .dropdown-menu .dropdown-item.active, .header-wrap .menu .dropdown-menu .dropdown-item:active{
 	color: #ffffff;
@@ -351,7 +358,7 @@ p {
 }
 
 /*==============================================================
-	02. Login with social
+	03. Login with social
 ==============================================================*/
 .login-with{
 	color: #ffffff;
@@ -405,7 +412,7 @@ p {
 .login-form-slider .slide.forgot-password-slide{}
 
 /*==============================================================
-	02. Login Style 1
+	04. Login Style 1
 ==============================================================*/
 
 .index .style1{
@@ -574,7 +581,7 @@ p {
 
 
 /*==============================================================
-	02. Login Style 2
+	05. Login Style 2
 ==============================================================*/
 .index2 .style2{
 	background: url(../images/banner4.jpg) no-repeat;
@@ -748,7 +755,7 @@ p {
 	padding-top: 10px;
 }
 /*==============================================================
-	02. Login Style 3
+	06. Login Style 3
 ==============================================================*/
 .index3 .style3{
 	background: url(../images/banner2.jpg) no-repeat;
@@ -878,7 +885,7 @@ p {
 }
 
 /*==============================================================
-	02. Login Style 4
+	07. Login Style 4
 ==============================================================*/
 .index4 .style4{
 	background: url(../images/banner1.jpg) no-repeat;
@@ -1010,7 +1017,7 @@ p {
 }
 
 /*==============================================================
-	02. Login Style 5
+	08. Login Style 5
 ==============================================================*/
 .index5 .style5{
 	background: url(../images/banner5.jpg) no-repeat;
@@ -1181,7 +1188,7 @@ p {
 
 
 /*==============================================================
-	02. Login Style 6
+	09. Login Style 6
 ==============================================================*/
 .index6 .style6{
 	background: url(../images/bg-pattern.png);
@@ -1264,16 +1271,9 @@ p {
 }
 
 /*==============================================================
-	02. Login Style 7
+	10. Login Style 7
 ==============================================================*/
 .index7 .style7{
-	/*background: -moz-linear-gradient(271deg, #b35755 0%, #252246 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b35755), color-stop(100%, #252246));
-	background: -webkit-linear-gradient(271deg, #b35755 0%, #252246 100%);
-	background: -o-linear-gradient(271deg, #b35755 0%, #252246 100%);
-	background: -ms-linear-gradient(271deg, #b35755 0%, #252246 100%);
-	background: linear-gradient(179deg, #b35755 0%, #252246 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b35755', endColorstr='#252246',GradientType=0 );*/
 	background: url(../images/banner7.png) no-repeat;
 	background-size: cover;
 }

@@ -1,16 +1,10 @@
 /*==============================================================
 	Media css
 ==============================================================*/
-@media (max-width: 1400px){
-}
 @media (max-width: 1200px){
 	/*============ Login Style 1 =============*/
 	.style1 .login-form-box{right: 20px;}
 }
-
-@media (max-width: 1024px){
-}
-
 @media (max-width: 991px){
 	/*============ Login Style 1 =============*/
 	.style1 .login-form-box{right: 0;}
@@ -26,6 +20,12 @@
 	.login-style1{padding: 30px 15px 10px;}
 	/*============ Login Style 3 =============*/
 	.style3 .login-form-slider .slide{padding-top: 230px;}
-}
-@media (max-width: 660px){
+	/*============ Login Style 4 =============*/
+	.style4 .login-box{height: auto;}
+	.style4 .login-form-slider .slide{position: relative; height: auto;}
+	/*============ Login Style 5 =============*/
+	.style5 .login-box{height: auto;}
+	.style5 .style5-left{display: none;}
+	.style5 .style5-right{min-height: 500px;}
+	.style5 .login-form-slider .slide{position: relative; padding: 50px 15px 0;}
 }
