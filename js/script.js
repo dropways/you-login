@@ -4,6 +4,11 @@ jQuery(window).on("load",function() {
 });
 jQuery(document).ready(function(){
 	"use strict";
+
+	var signup_slide = jQuery('.signup-slide');
+	var login_slide  = jQuery('.login-slide');
+	var forgot_password_slide  = jQuery('.forgot-password-slide');
+
 	// Background images
 	jQuery(".bg_img").each( function ( i, elem ) {
 		var img = jQuery( elem );
@@ -21,37 +26,40 @@ jQuery(document).ready(function(){
 		jQuery(this).find('.dropdown-menu').first().stop(true, true).slideUp(200);
 	});
 
+
 	// login form slider js
 	jQuery(document).on('click', '.login-form-slider .sign-up-click', function() {
-		jQuery('.signup-slide').velocity({translateX: ['0%','-100%'] }, {display:"block"});
-		jQuery('.login-slide').velocity({translateX: '100%' }, {display:"none"});
+		signup_slide.velocity({translateX: ['0%','-100%'] }, {display:"block"});
+		login_slide.velocity({translateX: '100%' }, {display:"none"});
 	});
 	jQuery(document).on('click', '.login-form-slider .login-click', function() {
-		jQuery('.login-slide').velocity({translateX: ['0%','-100%'] }, {display:"block"});
-		jQuery('.forgot-password-slide').velocity({translateX: '100%' }, {display:"none"});
-		jQuery('.signup-slide').velocity({translateX: '100%' }, {display:"none"});
+		login_slide.velocity({translateX: ['0%','-100%'] }, {display:"block"});
+		forgot_password_slide.velocity({translateX: '100%' }, {display:"none"});
+		signup_slide.velocity({translateX: '100%' }, {display:"none"});
 	});
 	jQuery(document).on('click', '.login-form-slider .forgot-password-click', function() {
-		jQuery('.forgot-password-slide').velocity({translateX: ['0%','-100%'] }, {display:"block"});
-		jQuery('.login-slide').velocity({translateX: '100%' }, {display:"none"});
+		forgot_password_slide.velocity({translateX: ['0%','-100%'] }, {display:"block"});
+		login_slide.velocity({translateX: '100%' }, {display:"none"});
 	});
 
+
+	// floating form
 	var refresh = function() {
-		$('.floating-form .form-group .form-control').each(function(index, el) {
-			var text_val = $(this).val();
+		jQuery('.floating-form .form-group .form-control').each(function(index, el) {
+			var text_val = jQuery(this).val();
 			if(text_val === "") {
-				$(this).parent().removeClass('has-value');
+				jQuery(this).parent().removeClass('has-value');
 			}else {
-				$(this).parent().addClass('has-value');
+				jQuery(this).parent().addClass('has-value');
 			}
-			$(this).focus(function(){
-				$(this).parent().addClass("is-focus");
-				$(this).parent().addClass('has-value');
+			jQuery(this).focus(function(){
+				jQuery(this).parent().addClass("is-focus");
+				jQuery(this).parent().addClass('has-value');
 			})
 			.blur(function(){
-				if($(this).val() === "" || $(this).val() === " " || $(this).val() === null){
-					$(this).parent().removeClass("is-focus");
-					$(this).parent().removeClass('has-value');
+				if(jQuery(this).val() === "" || jQuery(this).val() === " " || jQuery(this).val() === null){
+					jQuery(this).parent().removeClass("is-focus");
+					jQuery(this).parent().removeClass('has-value');
 				}
 			})
 		});

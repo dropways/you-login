@@ -32,7 +32,6 @@
 			<div class="menu">
 				<div class="dropdown">
 					<a class="dropdown-toggle hamburgler" href="#" role="button" data-toggle="dropdown">
-						<!-- <i class="ion-navicon"></i> -->
 						<span class="menu-icon">
 							<div class="bun top"></div>
 							<div class="meat"></div>
@@ -40,26 +39,27 @@
 						</span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right">
-						<ul>
-							<li><a class="dropdown-item" href="index.html">Login Style 1</a></li>
-							<li><a class="dropdown-item" href="index2.html">Login Style 2</a></li>
-							<li><a class="dropdown-item" href="index3.html">Login Style 3</a></li>
-							<li><a class="dropdown-item" href="index4.html">Login Style 4</a></li>
-							<li><a class="dropdown-item" href="index5.html">Login Style 5</a></li>
-							<li><a class="dropdown-item selected" href="index6.html">Login Style 6</a></li>
-							<li><a class="dropdown-item" href="index7.html">Login Style 7</a></li>
+						<ul class="cd-side-navigation">
+							<li><a class="dropdown-item" data-menu="index" href="index.html">Login Style 1</a></li>
+							<li><a class="dropdown-item" data-menu="index2" href="index2.html">Login Style 2</a></li>
+							<li><a class="dropdown-item" data-menu="index3" href="index3.html">Login Style 3</a></li>
+							<li><a class="dropdown-item" data-menu="index4" href="index4.html">Login Style 4</a></li>
+							<li><a class="dropdown-item" data-menu="index5" href="index5.html">Login Style 5</a></li>
+							<li><a class="dropdown-item selected" data-menu="index6" href="index6.html">Login Style 6</a></li>
+							<li><a class="dropdown-item" data-menu="index7" href="index7.html">Login Style 7</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- Header start -->
+	<!-- Header end -->
 	<main class="cd-main">
 		<section class="cd-section index6 visible">
 			<div class="cd-content style6">
 				<div class="login-box">
 					<div class="login-form-slider">
+						<!-- login slide start -->
 						<div class="login-slide slide">
 							<div class="d-flex height-100-percentage max-width-400 margin-0-auto padding-40px">
 								<div class="align-self-center width-100-percentage">
@@ -91,8 +91,9 @@
 								</div>
 							</div>
 						</div>
+						<!-- login slide end -->
+						<!-- signup slide start -->
 						<div class="signup-slide slide">
-
 							<div class="d-flex height-100-percentage padding-40px">
 								<div class="align-self-center width-100-percentage">
 									<form>
@@ -121,6 +122,8 @@
 								</div>
 							</div>
 						</div>
+						<!-- signup slide end -->
+						<!-- forgot password slide start -->
 						<div class="forgot-password-slide slide">
 							<div class="d-flex height-100-percentage style4-left">
 								<div class="align-self-center width-100-percentage max-width-400 margin-0-auto padding-40px">
@@ -139,12 +142,12 @@
 								</div>
 							</div>
 						</div>
+						<!-- forgot password slide end -->
 					</div>
 				</div>
 			</div>
 		</section>
 	</main>
-
 	<div id="cd-loading-bar" data-scale="1" class="index"></div>
 	<!-- JS File -->
 	<script src="js/modernizr.js"></script>
@@ -152,7 +155,7 @@
 	<script type="text/javascript" src="js/popper.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script src="js/velocity.min.js"></script>
-	<!-- <script src="js/main.js"></script> -->
+	<script src="js/main.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
